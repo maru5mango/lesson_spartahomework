@@ -1,0 +1,303 @@
+
+*{
+  margin: 0;
+  padding: 0;
+   }
+
+.screen{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: blueviolet;
+}
+
+#order{
+  width: 1000px;
+  height: 600px;
+  background-color: orange;
+}
+
+.bunny{
+  margin: 0;
+  background-color: #cc9ad6;
+  width: 400px;
+  height: 600px;
+  font-family: 'Single Day', cursive;
+
+}
+
+.red{
+  color: red;
+}
+
+#shirt_button{
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+  width: 100px;
+  height: 300px;
+
+}
+
+#shirt_button:hover{
+  box-shadow: 2px 2px 2px darkslategray;
+  opacity: 0.4;
+}
+
+#pant_button{
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+  width: 100px;
+  height: 300px;
+}
+
+#pant_button:hover{
+  box-shadow: 2px 2px 2px darkslategray;
+  opacity: 0.4;
+}
+div.bunny img {
+	position: absolute;
+  padding-left: 10px;
+  display:inline-block;
+  height:500px;
+  width: auto;
+  
+}
+
+
+.shirt{
+	visibility:hidden;
+  z-index: 2;
+}
+
+.pant{
+	visibility:hidden;
+  z-index: 1;
+	}
+
+.wrap {
+  position: absolute;
+  width: 900px;
+  font-family: 'Single Day', cursive;
+  padding: 10px;
+
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: 'Single Day', cursive;
+  margin: 10px;
+}
+
+
+#price{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+
+.price_box{
+  width: 240px;
+  height: 230px;
+  margin: 2px 10px 20px 10px;
+  background-color:azure;
+  border-radius: 40px 80px;
+  border-bottom-style: groove;
+  border-bottom-width: 5px;
+  border-bottom-color: blueviolet;
+}
+
+.price_box:hover {
+  box-shadow: 2px 2px 2px darkslategray;
+  opacity: 0.7;
+}
+
+.item{
+  font-size: 18px;
+  color: darkred;
+  width: 400px;
+  margin: 10px auto;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+input[type=text]{
+  border : 2px solid skyblue;
+  border-radius : 5px;
+}
+
+input[type=text]:hover{
+  border: 2px solid lightpink;
+  border-radius : 5px;
+}
+
+
+input[type=email]{
+  border : 2px solid skyblue;
+  border-radius : 5px;
+}
+
+input[type=email]:hover{
+  border: 2px solid lightpink;
+  border-radius : 5px;
+}
+
+
+input[type=tel]{
+  border : 2px solid skyblue;
+  border-radius : 5px;
+}
+
+input[type=tel]:hover{
+  border: 2px solid lightpink;
+  border-radius : 5px;
+}
+
+.E_rate{
+  color: blue;
+  font-size: 12px;
+  position: relative;
+  margin-top: 40px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.weather{
+  color: brown;
+  padding: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  margin: 20px;
+  border-bottom-style: dotted;
+  border-bottom-width: 3px;
+  border-bottom-color: coral;
+}
+#divide{
+  display: flex;
+}
+
+.price_img{
+  display: block;
+  position: relative;
+  margin: 2px auto;
+  width:200px;
+  height:150px;
+  padding-bottom: 10px;
+  transform: scale(1.7);
+}
+
+.priceinfo{
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+}
+
+#orderform{
+  width: 600px;
+  height: 500px;
+  background-color: wheat;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+
+select{
+  color: darkslategray;
+  background-color: honeydew;
+  border-radius: 5px;
+  height: 24px;
+}
+
+select:hover{
+  color: slategrey;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  height: 24px;
+}
+#addressbutton{
+  position: relative;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+#orderbutton{
+  position: relative;
+  width: 50px;
+}
+#orderboxopen{
+  position: relative;
+  width: 50px;
+}
+
+#orderbox{
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  position: absolute;
+  margin-left: 500px;
+  width:900px;
+  height: 500px;
+  border-radius: 3px;
+  background-color: violet;
+  opacity: 0.9;
+  font-family: 'Single Day', cursive;
+}
+
+.button{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.orderboxclose{
+ display: block;
+ margin: 10px;
+ width: 40px;
+ height: 40px;
+ background-color: lightskyblue;
+ border-radius: 50%;
+ border-style: none;
+ }
+
+ .orderboxclose:hover{
+  box-shadow:2px 2px 2px darkslategray;
+  background-color: orangered;
+ }
+
+ table {
+            border: 7px double darkviolet;
+            margin:15px;
+            text-align: center;
+        }
+
+td,
+th {
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+  font-size: 14px;
+  background-color: #9b4aac;
+}
+
+td{
+  font-size: 11px;
+}
+
+td{
+  border-bottom: 2px solid darkviolet;
+}

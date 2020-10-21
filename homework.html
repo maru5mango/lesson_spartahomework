@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>숙제1- 주문페이지 만들기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Single Day', cursive;
+        }
+        .wrap {
+            position: center;
+            width: 400px;
+            margin: 40px auto;
+        }
+        .center{
+            width: 400px;
+            margin: auto;
+        }
+        .img{
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            padding-bottom: 15px;
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            flex-direction: row;
+
+        }
+        .bold{
+            display: block;
+            margin-right: 50px;
+            color: cadetblue;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            padding-bottom: 3px;
+        }
+        p{
+            margin-top: 2px;
+            margin-bottom: 2px;
+            padding-bottom: 15px;
+            font-size: 14px;
+            font-style: italic;
+        }
+        .order{
+            display: flex;
+            flex-direction: column;
+            font-size: 17px;
+            color: darkslategray;
+        }
+        .item{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        label{
+            margin-right: 10px;
+        }
+        .order-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15px;
+        }
+        button{
+            padding: 4px 40px;
+            background-color: aquamarine;
+            border: none;
+            box-shadow:  2px 1px 1px 1px darkslategray;
+
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="center">
+        <img class="img" src="https://cdn.pixabay.com/photo/2018/07/14/15/27/cafe-3537801_1280.jpg" al="">
+    </div>
+    <div class="center">
+        <div class="title">
+            <h1 class="bold">이태원 카페 분양</h1>
+            <h5>가격: 12억</h5>
+        </div>
+        <p> 이태원역 5분 거리에 위치하는 카페입니다. 120평 규모로, 2층에 위에 루프탑까지 있습니다. 급매물로 나온 물건이니 빠른 연락 바랍니다.</p>
+        <h1 class="bold">주문하기</h1>
+        <div class="order">
+            <div class="item">
+                <label>주문자 성함</label>
+                <input type="text" maxlength="10">
+            </div>
+            <div class="item">
+                <label>상담 희망 시간</label>
+                <select name="order" id="">
+                    <option value="">상담 가능 시간을 입력하시면 연락을 드리겠습니다.</option>
+                    <option value="1">10월 중순(~10월 18일)</option>
+                    <option value="2">10월 말(~10월 31일)</option>
+                    <option value="3">11월 초(~11월 10일)</option>
+                    <option value="4">11월 중순(~11월 17일)</option>
+                </select>
+            </div>
+            <div class="item">
+                <label>이메일</label>
+                <input type="email" placeholder="1234@email.com">
+            </div>
+            <div class="item">
+                <label>전화번호</label>
+                <input type="tel" placeholder="010-1234-5678">
+            </div>
+
+        </div>
+    </div>
+    <div class="order-button">
+        <button type="button" onclick="order()">주문하기</button>
+    </div>
+</div>
+</div>
+<script>
+    function order() {
+        alert("주문이 완료되었습니다.")
+    }
+</script>
+</body>
+</html>
